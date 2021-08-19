@@ -46,6 +46,20 @@ pod "DIAnalytics"
 5. In Signing & Capabilities of the project, add the Background Modes Background fetch and
 Remote notifications and add Push Notifications.
 
+6. Example code to identify a contact.
+
+```objective-c
+DIContact *contactData = [[DIContact alloc] init];
+[contactData.diContactData setValue:... forKey:@"f_ID"];
+[contactData.diContactData setValue:... forKey:@"f_EMail"];
+[contactData.diContactData setValue:... forKey:@"f_FirstName"];
+[contactData.diContactData setValue:... forKey:@"f_LastName"];
+[[DIAnalytics shared] updateContact:contactData];
+[[DIAnalytics shared] requestToken:^(NSString *token) {
+[Alert show:token];
+}];
+```
+
 ----------------------------------------------old doc--------------------------------------------
 
 
