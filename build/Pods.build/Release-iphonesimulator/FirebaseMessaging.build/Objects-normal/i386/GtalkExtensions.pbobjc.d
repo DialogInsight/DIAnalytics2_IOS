@@ -1,0 +1,37 @@
+dependencies: \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Protos/GtalkExtensions.pbobjc.m \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBProtocolBuffers_RuntimeSupport.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBBootstrap.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBDescriptor_PackagePrivate.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBDescriptor.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.5.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.5.sdk/usr/include/mach-o/dyld.modulemap \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBRuntimeTypes.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBWireFormat.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBExtensionInternals.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBMessage_PackagePrivate.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBMessage.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBRootObject_PackagePrivate.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBRootObject.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBUtilities_PackagePrivate.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBUtilities.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBArray.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Protos/GtalkExtensions.pbobjc.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBProtocolBuffers.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBCodedInputStream.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBCodedOutputStream.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBDictionary.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBExtensionRegistry.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBUnknownField.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBUnknownFieldSet.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBWellKnownTypes.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBAny.pbobjc.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBDuration.pbobjc.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBTimestamp.pbobjc.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBApi.pbobjc.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBEmpty.pbobjc.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBFieldMask.pbobjc.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBSourceContext.pbobjc.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBStruct.pbobjc.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBType.pbobjc.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-vovbr410/Pods/Headers/Private/Protobuf/GPBWrappers.pbobjc.h
