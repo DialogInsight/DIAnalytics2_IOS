@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DIAnalytics2'
-  s.version          = '0.1.8'
+  s.version          = '0.1.13'
   s.summary          = 'DIAnalytics2 for iOS'
   s.license          = { :type => 'Commercial', :file => 'LICENSE.txt' }
   s.description      = 'DIAnalytics2 makes it easy to integrate Dialog Insight push system in your application.'
@@ -13,9 +13,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.frameworks = 'Foundation','CoreTelephony', 'SystemConfiguration', 'UIKit', 'Security', 'StoreKit'
   s.vendored_framework = "DIAnalytics2.Framework"
-  
-  s.dependency 'AFNetworking', '3.2.1'
+
+  s.dependency 'AFNetworking'
   s.dependency 'Firebase/Core'
   s.dependency 'Firebase/Messaging'
-  s.dependency 'Reachability'
 end
