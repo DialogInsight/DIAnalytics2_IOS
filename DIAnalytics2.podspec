@@ -1,4 +1,4 @@
-od::Spec.new do |s|
+Pod::Spec.new do |s|
   s.name             = 'DIAnalytics2'
   s.version          = '0.1.8'
   s.summary          = 'DIAnalytics2 for iOS'
