@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.platform   = :ios, '9.0'
   s.ios.deployment_target = '9.0'
-  s.frameworks = 'Foundation','CoreTelephony', 'SystemConfiguration', 'UIKit', 'Security', 'StoreKit'
+  # s.frameworks = 'Foundation','CoreTelephony', 'SystemConfiguration', 'UIKit', 'Security', 'StoreKit'
   s.vendored_framework = "DIAnalytics2.Framework"
 
   s.dependency 'AFNetworking'
