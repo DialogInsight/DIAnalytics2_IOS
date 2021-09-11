@@ -1,8 +1,8 @@
 dependencies: \
-  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-8r57x1fm/Pods/DIAnalytics2/DIAnalytics2/Classes/Model/Push/PushReceptionPushModel.m \
-  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-8r57x1fm/Pods/Target\ Support\ Files/DIAnalytics2/DIAnalytics2-prefix.pch \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-mcwchscj/Pods/DIAnalytics2/DIAnalytics2/Classes/Model/Push/PushReceptionPushModel.m \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-mcwchscj/Pods/Target\ Support\ Files/DIAnalytics2/DIAnalytics2-prefix.pch \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.5.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.5.sdk/usr/include/mach-o/dyld.modulemap \
-  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-8r57x1fm/Pods/DIAnalytics2/DIAnalytics2/Classes/DIDefines.h \
-  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-8r57x1fm/Pods/DIAnalytics2/DIAnalytics2/Classes/DISharedPref.h \
-  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-8r57x1fm/Pods/DIAnalytics2/DIAnalytics2/Classes/Model/Push/PushReceptionPushModel.h
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-mcwchscj/Pods/DIAnalytics2/DIAnalytics2/Classes/DIDefines.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-mcwchscj/Pods/DIAnalytics2/DIAnalytics2/Classes/DISharedPref.h \
+  /var/folders/qj/n3yr7jqn4k15p15hdf3qygpr0000gn/T/cocoapods-mcwchscj/Pods/DIAnalytics2/DIAnalytics2/Classes/Model/Push/PushReceptionPushModel.h
