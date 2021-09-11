@@ -1,69 +1,84 @@
-# DIAnalytics2_IOS
+# DIAnalytics2
 
-[![Version](https://img.shields.io/cocoapods/v/DIAnalytics.svg?style=flat)](http://cocoapods.org/pods/DIAnalytics2)
-[![License](https://img.shields.io/cocoapods/l/DIAnalytics.svg?style=flat)](http://cocoapods.org/pods/DIAnalytics2)
-[![Platform](https://img.shields.io/cocoapods/p/DIAnalytics.svg?style=flat)](http://cocoapods.org/pods/DIAnalytics2)
+[![CI Status](https://img.shields.io/travis/Simon/DIAnalytics2.svg?style=flat)](https://travis-ci.org/Simon/DIAnalytics2)
+[![Version](https://img.shields.io/cocoapods/v/DIAnalytics2.svg?style=flat)](https://cocoapods.org/pods/DIAnalytics2)
+[![License](https://img.shields.io/cocoapods/l/DIAnalytics2.svg?style=flat)](https://cocoapods.org/pods/DIAnalytics2)
+[![Platform](https://img.shields.io/cocoapods/p/DIAnalytics2.svg?style=flat)](https://cocoapods.org/pods/DIAnalytics2)
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
 
-- Firebase Project
-- Firebase Cloud Messaging configured in Firebase console. For more information, refer to [Firebase Cloud Messaging docs][1]
-- Firebase project's "GoogleService-Info.plist".
+- Firebase project and his "GoogleService-Info.plist". For more information, refer to [Firebase Cloud Messaging docs][1]
 - Application ID provided by Dialog Insight
 
 ## Installation
 
-DIAnalytics is available through [CocoaPods](http://cocoapods.org). To install
+DIAnalytics2 is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+1. Add the pod.
+
 ```ruby
-pod "DIAnalytics2"
+pod 'DIAnalytics2'
 ```
+2. Add Background Modes to your project
+
+Click on your project's name in the explorer, select your target and go to the Signing & Capabilities tab. In the Background Modes section, select Background fetch and Remote notifications. Also click on +Capabilities and add Push Notifications.
+
+3. Configure your Firebase project and copy your "GoogleService-Info.plist" in the Xcode project.
 
 ## Usage
 
-1. To use the SDK code, add @import DIAnalytics2 to the file.
-
-2. Include this code to the application function :
-   application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-   
-```objective-c
-[[DIAnalytics shared] startWithApplication:application applicationId:@"..."]
-```
-
-3. Add the following code to your AppDelegate:
+1. Open your `AppDelegate.m` file.
+2. Add the import `@import DIAnalytics2`.
+3. In `application:didFinishLaunchingWithOptions:`, copy the following code.
 
 ```objective-c
-- (void)application:(UIApplication*)application didReceiveRemoteNotification:(NSDictionary*)userInfo
-  fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-    [[DIAnalytics shared] didReceiveRemoteNotification:userInfo];
-    completionHandler(UIBackgroundFetchResultNoData);
-}
+// For France
+[[DIAnalytics shared] setBaseUrl:@"https://app.mydialoginsight.com/"];
+// For other countries
+[[DIAnalytics shared] setBaseUrl:@"https://app.dialoginsight.com/"];
+[[DIAnalytics shared] enableLogs];
+[[DIAnalytics shared] startWithApplication:application applicationId:@"YOUR_DIALOG_INSIGHT_APPLICATION_ID"];
+[[DIAnalytics shared] registerForRemoteNotification];
 ```
 
-4. Add your "GoogleService-Info.plist" provided by Firebase to the root of your project. Ensure that the file is in the "Copy Bundle Resources" of your target project.
+4. In `application:didReceiveRemoteNotification:fetchCompletionHandler:`, copy the following code.
 
-5. In Signing & Capabilities of the project, add the Background Modes Background fetch and
-Remote notifications and add Push Notifications.
+```objective-c
+[[DIAnalytics shared] didReceiveRemoteNotification:userInfo];
+completionHandler(UIBackgroundFetchResultNoData);
+```
 
-6. Example code to identify a contact.
+3. Send information about a user.
+
+The code below is an example on how to send information about a contact.
 
 ```objective-c
 DIContact *contactData = [[DIContact alloc] init];
-[contactData.diContactData setValue:... forKey:@"f_ID"];
-[contactData.diContactData setValue:... forKey:@"f_EMail"];
-[contactData.diContactData setValue:... forKey:@"f_FirstName"];
-[contactData.diContactData setValue:... forKey:@"f_LastName"];
+[contactData.diContactData setValue:@"1" forKey:@"f_ID"];
+[contactData.diContactData setValue:@"john@doe.com" forKey:@"f_EMail"];
+[contactData.diContactData setValue:@"John" forKey:@"f_FirstName"];
+[contactData.diContactData setValue:@"Doe" forKey:@"f_LastName"];
+
 [[DIAnalytics shared] updateContact:contactData];
-[[DIAnalytics shared] requestToken:^(NSString *token) {
-[Alert show:token];
+```
+
+You can then retrieve, if needed, this contact's unique guid.
+
+```objective-c
+[[DIAnalytics shared] getGuid:^(NSString *guid) {
+    NSLog(@"%@", guid);
 }];
 ```
-## Authors
 
-Dialog Insight, info@dialoginsight.com
+## Author
+
+Simon, simonricgir@gmail.com
 
 ## License
 
-[1]: https://firebase.google.com/docs/cloud-messaging/
-[2]: https://support.dialoginsight.com/en/support/solutions/articles/1000249331-defining-project-fields
+DIAnalytics2 is available under the MIT license. See the LICENSE file for more info.
