@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   # s.frameworks = 'Foundation','CoreTelephony', 'SystemConfiguration', 'UIKit', 'Security', 'StoreKit'
   s.vendored_framework = "DIAnalytics2.Framework"
 
-  s.dependency 'AFNetworking'
+  s.dependency 'AFNetworking', '~> 4.0'
   s.dependency 'Firebase/Core'
   s.dependency 'Firebase/Messaging'
 end
