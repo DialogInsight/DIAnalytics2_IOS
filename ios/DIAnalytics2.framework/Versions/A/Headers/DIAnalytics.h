@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-#ifndef _DIAnalytics_
-#define _DIAnalytics_
+#ifndef _kFIRLibraryVersionID
+#ifndef _FIRCoreDiagnosticsImplementation
 #import <FirebaseCore/FirebaseCore.h>
 #import <FirebaseMessaging/FirebaseMessaging.h>
 #endif
-
+#endif
 
 @class DIContact;
 @class PushReceptionPushModel;
