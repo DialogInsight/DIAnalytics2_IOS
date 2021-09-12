@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "DIAnalytics2"
-  s.version = "0.1.19"
+  s.version = "0.1.20"
   s.summary = "DIAnalytics2 for iOS"
   s.license = {"type"=>"Commercial", "file"=>"LICENSE.txt"}
   s.authors = {"Dialog Insight"=>"info@dialoginsight.com"}
@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit', 'StoreKit', 'WebKit', 'MobileCoreServices', 'CoreServices'
 
   s.dependency 'AFNetworking', '~> 4.0'
-  s.dependency 'Firebase/Core'
-  s.dependency 'Firebase/Messaging'
+  s.dependency 'Firebase/Core', '~> 6.0'
+  s.dependency 'Firebase/Messaging', '~> 6.0'
 end
