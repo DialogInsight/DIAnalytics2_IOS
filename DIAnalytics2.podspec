@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "DIAnalytics2"
-  s.version = "0.1.22"
+  s.version = "0.1.23"
   s.summary = "DIAnalytics2 for iOS"
   s.license = {"type"=>"Commercial", "file"=>"LICENSE.txt"}
   s.authors = {"Dialog Insight"=>"info@dialoginsight.com"}

@@ -102,6 +102,10 @@ You can then retrieve, if needed, this contact's unique guid.
 }];
 ```
 
+10. (optional) Provide your own UNUserNotificationCenterDelegate
+
+You can, if you wish, provide your own, or a custom UNUserNotificationCenterDelegate by setting `[DIAnalytics shared].userNotificationCenterDelegate`
+
 ## Author
 
 Simon, simonricgir@gmail.com
