@@ -10,7 +10,6 @@
 
 #ifndef _kFIRLibraryVersionID
 #ifndef _FIRCoreDiagnosticsImplementation
-#import <FirebaseCore/FirebaseCore.h>
 #import <FirebaseMessaging/FirebaseMessaging.h>
 #endif
 #endif

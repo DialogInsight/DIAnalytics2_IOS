@@ -44,6 +44,8 @@ Click on your project's name in the explorer, select your target and go to the S
 [[DIAnalytics shared] enableLogs];
 [[DIAnalytics shared] startWithApplication:application applicationId:@"YOUR_DIALOG_INSIGHT_APPLICATION_ID"];
 [[DIAnalytics shared] registerForRemoteNotification];
+
+[FIRApp configure];
 ```
 
 4. In `application:didReceiveRemoteNotification:fetchCompletionHandler:`, copy the following code.
