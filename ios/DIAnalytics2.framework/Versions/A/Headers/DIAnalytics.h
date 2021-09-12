@@ -7,8 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+
+#ifndef _DIAnalytics_
+#define _DIAnalytics_
 #import <FirebaseCore/FirebaseCore.h>
 #import <FirebaseMessaging/FirebaseMessaging.h>
+#endif
+
 
 @class DIContact;
 @class PushReceptionPushModel;
