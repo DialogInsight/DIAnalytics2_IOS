@@ -7,12 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-#ifndef _kFIRLibraryVersionID
-#ifndef _FIRCoreDiagnosticsImplementation
-#import <FirebaseMessaging/FirebaseMessaging.h>
-#endif
-#endif
+#import <UserNotifications/UserNotifications.h>
 
 @class DIContact;
 @class PushReceptionPushModel;
@@ -21,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^block_success)(id _Nullable object);
 
-@interface DIAnalytics : NSObject <FIRMessagingDelegate>
+@interface DIAnalytics : NSObject
 
 @property (nonatomic, strong) DIContact *contact;
 @property (nonatomic, strong) PushReceptionPushModel *pushReceptionsData;
@@ -31,6 +26,8 @@ typedef void (^block_success)(id _Nullable object);
 
 @property (nonatomic, strong) NSString *baseUrl;
 @property (nonatomic, strong) NSString *apiUrl;
+
+@property (NS_NONATOMIC_IOSONLY, nullable, weak) id <UNUserNotificationCenterDelegate> userNotificationCenterDelegate;
 
 + (DIAnalytics*)shared;
 
@@ -42,10 +39,10 @@ typedef void (^block_success)(id _Nullable object);
 - (void)registerForRemoteNotification;
 - (void)updateContact:(DIContact*)contactData;
 - (void)reset;
-//- (void)requestToken:(block_success)success;
 - (void)updateContactSync;
 - (void)getGuid:(block_success)success;
 - (void)didReceiveRemoteNotification:(NSDictionary*)userInfo;
+- (void)didReceiveRegistrationToken:(NSString*)fcmToken;
 
 @end
 

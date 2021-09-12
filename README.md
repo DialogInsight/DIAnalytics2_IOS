@@ -19,9 +19,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 DIAnalytics2 is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-1. Add the pod.
+1. Add the pods.
 
 ```ruby
+pod 'Firebase/Core'
+pod 'Firebase/Messaging'
 pod 'DIAnalytics2'
 ```
 2. Add Background Modes to your project
@@ -32,9 +34,23 @@ Click on your project's name in the explorer, select your target and go to the S
 
 ## Usage
 
-1. Open your `AppDelegate.m` file.
-2. Add the import `@import DIAnalytics2`.
-3. In `application:didFinishLaunchingWithOptions:`, copy the following code.
+1. Open your `AppDelegate.h` file.
+2. Add the following imports
+
+```
+#import <FirebaseCore/FirebaseCore.h>
+#import <FirebaseMessaging/FirebaseMessaging.h>
+```
+
+3. Add `FIRMessagingDelegate` to your AppDelegate delegates.
+
+```
+@interface AppDelegate : UIResponder <UIApplicationDelegate, FIRMessagingDelegate>
+```
+
+4. Open your `AppDelegate.m` file.
+5. Add the import `@import DIAnalytics2`.
+6. In `application:didFinishLaunchingWithOptions:`, copy the following code.
 
 ```objective-c
 // For France
@@ -46,16 +62,25 @@ Click on your project's name in the explorer, select your target and go to the S
 [[DIAnalytics shared] registerForRemoteNotification];
 
 [FIRApp configure];
+[FIRMessaging messaging].delegate = self;
 ```
 
-4. In `application:didReceiveRemoteNotification:fetchCompletionHandler:`, copy the following code.
+7. In `application:didReceiveRemoteNotification:fetchCompletionHandler:`, copy the following code.
 
 ```objective-c
 [[DIAnalytics shared] didReceiveRemoteNotification:userInfo];
 completionHandler(UIBackgroundFetchResultNoData);
 ```
 
-3. Send information about a user.
+8. Add the following code for `didReceiveRegistrationToken`.
+
+```
+- (void)messaging:(FIRMessaging*)messaging didReceiveRegistrationToken:(NSString*)fcmToken {
+    [[DIAnalytics shared] didReceiveRegistrationToken:fcmToken];
+}
+```
+
+9. Send information about a user.
 
 The code below is an example on how to send information about a contact.
 
