@@ -106,6 +106,8 @@ You can then retrieve, if needed, this contact's unique guid.
 
 You can, if you wish, provide your own or a custom UNUserNotificationCenterDelegate by setting `[DIAnalytics shared].userNotificationCenterDelegate`
 
+11. (optional) If your project uses the "Trusted identity" flag, you must pass the guid linked to your contact, the Firebase token and the identity fields of the contact to an authenticated web service. See [doc](http://app.dialoginsight.com/webservices/#tab=client&section=services&application=OFC4&service=Mobile&method=Identity). 
+
 ## Author
 
 Simon, simonricgir@gmail.com
