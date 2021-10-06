@@ -49,7 +49,7 @@ Click on your project's name in the explorer, select your target and go to the S
 ```
 
 4. Open your `AppDelegate.m` file.
-5. Add the import `@import DIAnalytics2`.
+5. Add the import `#import <DIAnalytics2/DIAnalytics.h>`.
 6. In `application:didFinishLaunchingWithOptions:`, copy the following code.
 
 ```objective-c
