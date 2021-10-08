@@ -21,7 +21,7 @@ typedef void (^block_success)(id _Nullable object);
 @property (nonatomic, strong) DIContact *contact;
 @property (nonatomic, strong) PushReceptionPushModel *pushReceptionsData;
 
-@property (nonatomic, strong) UIApplication *application;
+@property (nonatomic, strong) id application;
 @property (nonatomic, strong) NSString *applicationId;
 
 @property (nonatomic, strong) NSString *baseUrl;
@@ -34,7 +34,7 @@ typedef void (^block_success)(id _Nullable object);
 - (NSString*)libraryVersion;
 - (NSString*)getBaseUrl;
 - (void)enableLogs;
-- (void)startWithApplication:(UIApplication*)application applicationId:(NSString*)applicationId;
+- (void)startWithApplication:(id)application applicationId:(NSString*)applicationId;
 - (void)addPushId:(NSString*)pushId;
 - (void)registerForRemoteNotification;
 - (void)updateContact:(DIContact*)contactData;
