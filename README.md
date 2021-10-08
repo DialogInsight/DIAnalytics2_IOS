@@ -49,7 +49,7 @@ Click on your project's name in the explorer, select your target and go to the S
 ```
 
 4. Open your `AppDelegate.m` file.
-5. Add the import `@import DIAnalytics2`.
+5. Add the import `#import <DIAnalytics2/DIAnalytics.h>`.
 6. In `application:didFinishLaunchingWithOptions:`, copy the following code.
 
 ```objective-c
@@ -105,6 +105,8 @@ You can then retrieve, if needed, this contact's unique guid.
 10. (optional) Provide your own UNUserNotificationCenterDelegate
 
 You can, if you wish, provide your own or a custom UNUserNotificationCenterDelegate by setting `[DIAnalytics shared].userNotificationCenterDelegate`
+
+11. (optional) If your project uses the "Trusted identity" flag, you must pass the guid linked to your contact, the Firebase token and the identity fields of the contact to an authenticated web service. See [doc](http://app.dialoginsight.com/webservices/#tab=client&section=services&application=OFC4&service=Mobile&method=Identity). 
 
 ## Author
 
